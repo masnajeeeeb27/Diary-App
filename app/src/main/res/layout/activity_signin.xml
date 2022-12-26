@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="false"
+    android:orientation="vertical"
+    android:background="@color/purple_200"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="SIGN IN"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:hint="Email"
+        android:drawableLeft="@drawable/email"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_text"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:hint="Password"
+        android:drawableLeft="@drawable/password"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/custom_text"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/signin"
+        android:text="Login"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/white"
+        android:textColor="@color/teal_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:text="Register"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button_register"
+        app:backgroundTint="@color/teal_200"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:text="Forgot Password"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
